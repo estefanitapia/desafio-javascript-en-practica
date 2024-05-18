@@ -51,7 +51,7 @@ function inputValidator(name, subject, message) {
     deleteError();
     deleteInputs();
 
-    // Mensaje de éxito que aparecerá al enviar el mensaje
+    /* Frase de éxito que aparecerá al enviar el mensaje */
     successMessage.innerHTML = "¡Mensaje enviado con éxito!";
   }
 }
