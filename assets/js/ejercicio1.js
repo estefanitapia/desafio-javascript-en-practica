@@ -4,7 +4,7 @@ const inputName = document.querySelector("#nombre");
 const inputSubject = document.querySelector("#asunto");
 const inputMessage = document.querySelector("#mensaje");
 const inputBtn = document.querySelector("#botton");
-/* Errores que apareceran como mensaje en los input */
+/* Elementos donde se presentarán mensajes de error al usuario */
 const errorName = document.querySelector(".errorNombre");
 const errorSubject = document.querySelector(".errorAsunto");
 const errorMessage = document.querySelector(".errorMensaje");
@@ -33,17 +33,17 @@ function inputValidator(name, subject, message) {
   deleteError();
 
   if (!validName) {
-    errorName.innerHTML =
+    errorName.textContent =
       "El valor ingresado como nombre no es válido, ingréselo nuevamente.";
   }
 
   if (!validSubject) {
-    errorSubject.innerHTML =
+    errorSubject.textContent =
       "El valor ingresado como asunto no es válido, ingréselo nuevamente.";
   }
 
   if (!validMessage) {
-    errorMessage.innerHTML =
+    errorMessage.textContent =
       "El valor ingresado como mensaje no es válido, ingréselo nuevamente.";
   }
 
@@ -52,14 +52,14 @@ function inputValidator(name, subject, message) {
     deleteInputs();
 
     /* Frase de éxito que aparecerá al enviar el mensaje */
-    successMessage.innerHTML = "¡Mensaje enviado con éxito!";
+    successMessage.textContent = "¡Mensaje enviado con éxito!";
   }
 }
 /* Borra los errores */
 function deleteError() {
-  errorName.innerHTML = "";
-  errorSubject.innerHTML = "";
-  errorMessage.innerHTML = "";
+  errorName.textContent = "";
+  errorSubject.textContent = "";
+  errorMessage.textContent = "";
 }
 /* Limpia los inputs */
 function deleteInputs() {
