@@ -9,7 +9,7 @@ const result = document.querySelector(".resultado");
 btnAdd.addEventListener("click", adittion);
 function adittion(e) {
   let add = parseInt(firstNumber.value) + parseInt(secondNumber.value);
-  result.innerHTML = add; /* Se muestra el resultado de la operación */
+  result.textContent = add; /* Se muestra el resultado de la operación */
 }
 /* Se escucha el evento que en este caso es click y resta */
 btnSubtract.addEventListener("click", subtract);
