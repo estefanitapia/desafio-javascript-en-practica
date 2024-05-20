@@ -18,5 +18,5 @@ function subtract(e) {
   if (subtraction < 0) {
     subtraction = 0;
   }
-  result.innerHTML = subtraction;
+  result.textContent = subtraction;
 }
