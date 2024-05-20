@@ -7,30 +7,29 @@ const button5 = document.querySelector("#btn-5");
 const button6 = document.querySelector("#btn-6");
 const box = document.querySelector("#caja");
 
-//Realizamos la acción por medio de un click para que cambie de color
-button1.addEventListener("click", changeRed);
-button2.addEventListener("click", changeOrange);
-button3.addEventListener("click", changeYellow);
-button4.addEventListener("click", changeGreen);
-button5.addEventListener("click", changeBlue);
-button6.addEventListener("click", changePink);
-
-//Función para que realice la acción de cambio de color del cuadro
-function changeRed(e) {
+//Realizamos la acción por medio de un click y la función para que cambie de color 
+button1.addEventListener("click", function changeRed(e) {
   caja.style.backgroundColor = button1.style.backgroundColor;
-}
-function changeOrange(e) {
+});
+button2.addEventListener("click", function changeOrange(e) {
   caja.style.backgroundColor = button2.style.backgroundColor;
-}
-function changeYellow(e) {
+});
+button3.addEventListener("click", function changeYellow(e) {
   caja.style.backgroundColor = button3.style.backgroundColor;
-}
-function changeGreen(e) {
+});
+button4.addEventListener("click", function changeGreen(e) {
   caja.style.backgroundColor = button4.style.backgroundColor;
-}
-function changeBlue(e) {
+});
+button5.addEventListener("click", function changeBlue(e) {
   caja.style.backgroundColor = button5.style.backgroundColor;
-}
-function changePink(e) {
+});
+button6.addEventListener("click", function changePink(e) {
   caja.style.backgroundColor = button6.style.backgroundColor;
-}
+});
+
+
+
+
+
+
+
